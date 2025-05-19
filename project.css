@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
     background-color: rgb(252, 245, 247); 
     margin: 0;
-    padding: 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ h2, h3, h4 {
     font-size: 1.5em;
     font-weight: 1000;
     text-decoration: underline;
-    color: rgb(rgb(53, 34, 59), green, blue);
+    color: rgb(53, 34, 59);
     margin-bottom: 20px;
 } 
 
@@ -45,7 +45,7 @@ section{
 }
 
 .project-box {
-    width: 700px;
+    width:auto;
     margin: 20px;
     padding: 20px;
     height: 300px;
@@ -63,4 +63,33 @@ section{
     flex-direction: column;
     text-align: center;
     cursor: pointer;
+}
+
+@media (min-width: 768px){
+    main{
+        max-width: 1000px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2, h3, h4{
+        font-size: 2rem;
+    }
+
+    .project-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        padding: 40px;
+        gap: 20px;
+    }
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
